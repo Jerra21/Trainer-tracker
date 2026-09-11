@@ -6,35 +6,19 @@
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,Segoe UI,sans-serif}.app{min-height:100vh}.side{position:fixed;width:230px;inset:0 auto 0 0;padding:20px;background:#0b1627;border-right:1px solid var(--line)}.brand{font-weight:800;font-size:20px;margin-bottom:25px}.brand small{display:block;color:var(--muted);font-size:12px}.nav button{width:100%;padding:12px;margin:4px 0;text-align:left;border:0;border-radius:10px;background:0;color:var(--muted);cursor:pointer}.nav button.active,.nav button:hover{background:var(--p2);color:#fff}.main{margin-left:230px;padding:22px;max-width:1500px}.top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:20px}.top h1{margin:0}.team{display:flex;gap:7px}.team select{min-width:170px}.content{display:grid;gap:16px}.grid{display:grid;gap:14px}.g2{grid-template-columns:repeat(2,minmax(0,1fr))}.g3{grid-template-columns:repeat(3,minmax(0,1fr))}.g4{grid-template-columns:repeat(4,minmax(0,1fr))}.card,.kpi{background:var(--p);border:1px solid var(--line);border-radius:16px;padding:17px}.kpi b{display:block;font-size:27px}.kpi span,.muted,.sub{color:var(--muted);font-size:13px}label{display:block;color:var(--muted);font-size:12px;margin:0 0 5px}input,select,textarea{width:100%;background:#0b1525;color:#fff;border:1px solid var(--line);border-radius:9px;padding:10px}textarea{min-height:85px}.btn{border:0;border-radius:9px;padding:10px 14px;background:var(--green);font-weight:750;cursor:pointer}.btn.sec{background:#21334c;color:#fff}.btn.danger{background:#55262b;color:#ffdede}.btn.sm{padding:7px 10px;font-size:12px}.actions{display:flex;gap:8px;flex-wrap:wrap}.head{display:flex;justify-content:space-between;align-items:center;gap:10px}.head h2,.head h3{margin:0}table{width:100%;border-collapse:collapse}th,td{padding:9px 7px;border-bottom:1px solid var(--line);text-align:left}th{color:var(--muted);font-size:11px;text-transform:uppercase}tr.click{cursor:pointer}tr.click:hover{background:#132238}.badge{display:inline-block;padding:4px 8px;border-radius:99px;background:#22334b;font-size:12px}.ok{background:#173f32;color:#7ce0b0}.warn{background:#493a18;color:#ffd978}.bad{background:#4c2227;color:#ff9b9b}.blue{background:#173856;color:#8fcaff}.stat{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}.pill{padding:8px 10px;border:1px solid var(--line);background:#0c1727;border-radius:9px}.pill b{display:block;font-size:17px}.pill span{font-size:10px;color:var(--muted)}.entry{display:grid;grid-template-columns:1.4fr 1fr 100px 1.3fr;gap:8px;padding:10px 0;border-bottom:1px solid var(--line)}.matchentry{grid-template-columns:1.4fr 105px 70px 70px 70px 60px 60px 80px 1.2fr 55px}.notice{padding:11px;border-left:4px solid var(--blue);background:#14253a;border-radius:8px;margin:7px 0}.notice.warn{border-color:var(--yellow)}.notice.bad{border-color:var(--red)}.notice.good{border-color:var(--green)}.modal{position:fixed;inset:0;background:#000b;display:none;align-items:center;justify-content:center;padding:14px;z-index:50}.modal.open{display:flex}.box{width:min(900px,100%);max-height:93vh;overflow:auto;background:var(--p);border:1px solid var(--line);border-radius:17px;padding:18px}.close{border:0;background:#21334c;color:#fff;border-radius:8px;padding:7px 11px;cursor:pointer}.calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}.calh{text-align:center;color:var(--muted);font-size:11px}.day{min-height:58px;background:#0d1829;border:1px solid var(--line);border-radius:8px;padding:5px}.day.click{cursor:pointer}.goal{padding:11px;background:#0d1829;border:1px solid var(--line);border-radius:10px;margin:7px 0}.bottom{display:none}
 @media(max-width:850px){.side{display:none}.main{margin:0;padding:14px 14px 80px}.top{align-items:flex-start;flex-direction:column}.team{width:100%}.team select{flex:1}.g4,.g3{grid-template-columns:1fr 1fr}.g2{grid-template-columns:1fr}.entry,.matchentry{grid-template-columns:1fr 1fr}.entry .name,.matchentry .name{grid-column:1/-1}.bottom{display:flex;position:fixed;z-index:40;bottom:0;left:0;right:0;background:#0b1627;border-top:1px solid var(--line);padding:5px;gap:3px}.bottom button{flex:1;background:0;border:0;color:var(--muted);font-size:10px;padding:5px}.bottom button.active{color:#fff;background:#1a2a41;border-radius:8px}table{font-size:12px}.hideMob{display:none}}
 @media(max-width:480px){.g4,.g3{grid-template-columns:1fr}.card{padding:14px}.actions .btn{flex:1}}
-</style>
-<style id="live-v2-css">
-.live-scoreboard{
-  display:flex;align-items:center;justify-content:center;gap:18px;
-  padding:16px 18px;margin:12px 0;border:1px solid var(--border,#2b3442);
-  border-radius:16px;background:linear-gradient(135deg,rgba(255,255,255,.05),rgba(255,255,255,.02));
-}
-.live-score-team{text-align:center;min-width:110px}
-.live-score-team .name{font-weight:700;font-size:13px;opacity:.8}
-.live-score-num{font-size:42px;font-weight:900;line-height:1.05}
-.live-score-sep{font-size:28px;opacity:.45}
-.live-goal-controls{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
-.live-goal-controls button{min-height:48px}
-.live-events-table{width:100%;border-collapse:collapse}
-.live-events-table th,.live-events-table td{padding:8px;border-bottom:1px solid var(--border,#2b3442);text-align:left;font-size:13px}
-.live-check-card{border:1px solid var(--border,#2b3442);border-radius:14px;padding:12px;margin-top:12px}
-.live-check-row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border,#2b3442)}
-.live-check-row:last-child{border-bottom:0}
-.live-check-row strong{min-width:150px}
-.live-summary-player{display:grid;grid-template-columns:1.2fr .7fr .6fr .6fr .6fr 1fr;gap:8px;align-items:center}
-.live-summary-player + .live-summary-player{margin-top:8px}
-@media(max-width:720px){
- .live-scoreboard{gap:10px}.live-score-num{font-size:34px}.live-score-team{min-width:85px}
- .live-summary-player{grid-template-columns:1fr 1fr 1fr}
- .live-summary-player .wide{grid-column:1/-1}
-}
-</style>
 
-</head><body>
+/* LIVE WEDSTRIJD ADD-ON */
+.live-score{display:flex;align-items:center;justify-content:center;gap:25px;padding:18px;border:1px solid var(--line);border-radius:16px;background:#0b1525;margin-bottom:14px}
+.score-team{text-align:center;min-width:130px}.score-team div:first-child{color:var(--muted);font-size:13px}.score{font-size:52px;font-weight:900}
+.clock{text-align:center;font-size:42px;font-weight:900;margin:10px}.clock.overtime{color:var(--yellow)}
+.live-actions{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.player-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.live-player{padding:10px;border:1px solid var(--line);border-radius:10px;background:#0d1829}.live-player .actions{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}
+.live-event{padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}.live-minute-list{max-height:360px;overflow:auto}
+.live-modal{position:fixed;inset:0;background:#000b;display:flex;align-items:center;justify-content:center;padding:14px;z-index:100}
+.live-modal-box{width:min(1150px,100%);max-height:93vh;overflow:auto;background:var(--p);border:1px solid var(--line);border-radius:17px;padding:18px}
+.live-modal-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}.live-modal table{min-width:900px}
+@media(max-width:850px){.live-score{gap:8px}.score-team{min-width:90px}.score{font-size:40px}.live-actions{grid-template-columns:1fr}.player-grid{grid-template-columns:1fr}}
+</style></head><body>
 <aside class="side"><div class="brand">⚽ U16 Trainer<small>Trainersdashboard V3</small></div><div id="nav" class="nav"></div><hr>
 <button class="btn sec sm" onclick="backup()">⬇ Back-up</button> <button class="btn sec sm" onclick="document.querySelector('#imp').click()">⬆ Import</button><input id="imp" type="file" accept=".json" hidden onchange="importDB(event)"></aside>
 <main class="main"><div class="top"><h1 id="title">Dashboard</h1><div class="team"><select id="teams" onchange="setTeam(this.value)"></select><button class="btn sm sec" onclick="newTeam()">+ Team</button></div></div><div id="content"></div></main>
@@ -70,6 +54,7 @@ let ui = {
   calendarMonth: new Date(new Date().getFullYear(), new Date().getMonth(), 1),
   trainingCalendarMonth: new Date(new Date().getFullYear(), new Date().getMonth(), 1)
 };
+let liveState={match:null,timer:null};
 
 const uid = (prefix="id") => prefix + "_" + Date.now().toString(36) + "_" + Math.random().toString(36).slice(2,9);
 const today = () => new Date().toISOString().slice(0,10);
@@ -336,7 +321,7 @@ function shell(){
         <button class="danger ghost" id="resetBtn">Reset data</button>
       </div>
     </aside>
-    <main class="main"><div class="mobile-head"><b>⚽ U16 Trainer</b><button class="ghost" id="mobileBackup">Back-up</button></div><div id="view"></div></main>
+    <main class="main"><div class="mobile-head"><b>⚽ U16 Trainer</b><button class="ghost" id="mobileBackup">Back-up</button></div><div id="view"></div><div id="liveModalRoot"></div></main>
     <nav class="mobile-nav">${nav.map(([id,label,icon])=>`<button class="${ui.section===id?"active":""}" data-nav="${id}"><span>${icon}</span><small>${label}</small></button>`).join("")}</nav>
   </div>`;
 }
@@ -374,6 +359,14 @@ function dashboardView(){
 
   ${card("Aanwezigheid per speler", dashboardAttendanceCalendar())}
 
+  ${card("Speelminuten per speler", `<div class="table-wrap"><table><thead><tr><th>Speler</th><th>Totaal gespeelde minuten</th><th>Gemiddeld per gespeelde wedstrijd</th><th>Wedstrijden</th></tr></thead><tbody>
+  ${ps.map(p=>{
+    const total=sumMinutes(p.id);
+    const games=teamMatches().filter(m=>(m.players||[]).some(r=>r.playerId===p.id && (num(r.minutes)>0 || r.status==="basis" || r.status==="ingevallen"))).length;
+    const average=games?(total/games).toFixed(1):"0.0";
+    return `<tr><td><b>${esc(p.name)}</b><br><span class="muted">${esc(p.position||"")}</span></td><td><b>${Math.round(total)} min</b></td><td>${average} min</td><td>${games}</td></tr>`;
+  }).join("")||`<tr><td colspan="4">Nog geen spelers.</td></tr>`}
+  </tbody></table></div>`)}
   <div class="grid-2">
     ${card("MOTM leaderboard", motmLeaderboard(motm))}
     ${card("Trends", trendBlock())}
@@ -552,7 +545,7 @@ function matchView(){
   ui.matchDraft=d;
   const edit=!!ui.editingMatch;
   const ps=players();
-  return `<div class="page-head"><div><span class="eyebrow">WEDSTRIJD</span><h1>${edit?"Wedstrijd bewerken":"Nieuwe wedstrijd"}</h1><p>Teamresultaat én individuele prestaties in één invoerscherm.</p></div><div class="head-actions">${edit?`<button class="secondary" id="cancelMatch">Annuleren</button>`:""}${!edit?`<button class="secondary" id="startLiveMatch">▶ Live wedstrijd</button>`:""}<button class="primary" id="saveMatch">${edit?"Wijzigingen opslaan":"Wedstrijd opslaan"}</button></div></div>
+  return `<div class="page-head"><div><span class="eyebrow">WEDSTRIJD</span><h1>${edit?"Wedstrijd bewerken":"Nieuwe wedstrijd"}</h1><p>Teamresultaat én individuele prestaties in één invoerscherm.</p></div><div class="head-actions"><button class="secondary" id="startLiveFromMatch">▶ Live wedstrijd</button>${edit?`<button class="secondary" id="cancelMatch">Annuleren</button>`:""}<button class="primary" id="saveMatch">${edit?"Wijzigingen opslaan":"Wedstrijd opslaan"}</button></div></div>
   <div class="grid-2">
     ${card("Wedstrijd",`
       <div class="form-grid">
@@ -852,6 +845,171 @@ function renderProfile(id){
 
 /* ---------- Events ---------- */
 
+
+/* =========================================================
+   LIVE WEDSTRIJD — optionele uitbreiding op de bestaande basis
+   ========================================================= */
+function startLiveMatch(){
+  const ps=players();
+  if(ps.length<11){alert("Voeg eerst minimaal 11 actieve spelers toe.");return;}
+  liveState.match={teamId:db.activeTeamId,date:today(),opponent:"",type:"Competitie",halfLength:40,half:1,status:"setup",elapsed:0,lastTick:null,ownGoals:0,opponentGoals:0,field:[],bench:ps.map(p=>p.id),starterIds:[],enteredIds:[],minutes:{},events:[],substitutions:[],redOut:[]};
+  renderLiveSetup();
+}
+function renderLiveSetup(){
+  const lm=liveState.match;
+  document.getElementById("view").innerHTML=`<div class="page-head"><div><span class="eyebrow">LIVE</span><h1>▶ Live wedstrijd</h1><p>Kies de basiself en start de live registratie.</p></div><button class="secondary" id="cancelLive">Annuleren</button></div>
+  <div class="grid-2">${card("Wedstrijdgegevens",`<div class="form-grid">
+    <label>Datum<input id="lDate" type="date" value="${esc(lm.date)}"></label><label>Tegenstander<input id="lOpp" placeholder="Tegenstander"></label>
+    <label>Type<select id="lType"><option>Competitie</option><option>Beker</option><option>Oefenwedstrijd</option><option>Toernooi</option></select></label>
+    <label>Duur per helft<input id="lHalf" type="number" min="1" value="40"></label></div>`)}
+  ${card("Basiself",`<div class="notice">Selecteer precies <b>11 basisspelers</b>. Deze status blijft <b>Basis</b>, ook na een wissel.</div>
+    <div class="player-grid">${players().map(p=>`<label class="live-player"><input type="checkbox" class="live-starter" value="${p.id}"> <b>${esc(p.name)}</b><br><span class="muted">${esc(p.position||"")}</span></label>`).join("")}</div>
+    <button class="primary" id="beginLive" style="margin-top:12px">▶ Start 1e helft</button>`)}
+  </div>`;
+  bindLive();
+}
+function beginLiveMatch(){
+  const selected=[...document.querySelectorAll(".live-starter:checked")].map(x=>x.value);
+  if(selected.length!==11){alert("Selecteer precies 11 basisspelers.");return;}
+  const lm=liveState.match;
+  lm.date=document.getElementById("lDate").value||today();lm.opponent=document.getElementById("lOpp").value.trim()||"Tegenstander";
+  lm.type=document.getElementById("lType").value;lm.halfLength=Math.max(1,+document.getElementById("lHalf").value||40);
+  lm.field=[...selected];lm.bench=players().map(p=>p.id).filter(id=>!selected.includes(id));
+  lm.starterIds=[...selected];lm.enteredIds=[...selected];selected.forEach(id=>lm.minutes[id]=0);
+  lm.status="running";lm.half=1;lm.elapsed=0;lm.lastTick=Date.now();startLiveTimer();renderLiveMatch();
+}
+function startLiveTimer(){stopLiveTimer();liveState.timer=setInterval(tickLiveMatch,1000)}
+function stopLiveTimer(){if(liveState.timer){clearInterval(liveState.timer);liveState.timer=null}}
+function elapsedLiveMinutes(){
+  const lm=liveState.match;if(!lm)return 0;let ms=lm.elapsed;
+  if(lm.status==="running"&&lm.lastTick)ms+=Date.now()-lm.lastTick;return ms/60000;
+}
+function tickLiveMatch(){
+  const lm=liveState.match;if(!lm||lm.status!=="running")return;
+  const now=Date.now(),delta=now-(lm.lastTick||now);lm.elapsed+=delta;lm.lastTick=now;
+  (lm.field||[]).forEach(id=>lm.minutes[id]=(lm.minutes[id]||0)+delta/60000);renderLiveMatch();
+}
+function pauseLiveMatch(){
+  const lm=liveState.match;if(!lm)return;
+  if(lm.status==="running"){tickLiveMatch();lm.status="paused";lm.lastTick=null}
+  else if(lm.status==="paused"){lm.status="running";lm.lastTick=Date.now()}
+  renderLiveMatch();
+}
+function finishHalfLive(){
+  const lm=liveState.match;if(!lm)return;
+  if(lm.status==="running")tickLiveMatch();
+  if(lm.half===1){lm.half=2;lm.elapsed=0;lm.lastTick=null;lm.status="paused";renderLiveMatch()}
+  else{lm.status="finished";stopLiveTimer();openLiveSummary()}
+}
+function liveGoal(side,playerId=null){
+  const lm=liveState.match;if(!lm)return;const minute=Math.floor(elapsedLiveMinutes());
+  if(side==="own")lm.ownGoals++;else lm.opponentGoals++;
+  lm.events.push({id:uid("event"),type:"goal",side,playerId,minute});renderLiveMatch();
+}
+function livePlayerGoal(id){liveGoal("own",id)}
+function liveAssist(id){const lm=liveState.match;if(!lm)return;lm.events.push({id:uid("event"),type:"assist",playerId:id,minute:Math.floor(elapsedLiveMinutes())});renderLiveMatch()}
+function liveCard(id,type){
+  const lm=liveState.match;if(!lm)return;const minute=Math.floor(elapsedLiveMinutes());
+  lm.events.push({id:uid("event"),type,playerId:id,minute});
+  if(type==="red"){lm.redOut.push(id);lm.field=lm.field.filter(x=>x!==id)}renderLiveMatch();
+}
+function liveSub(outId){
+  const lm=liveState.match;if(!lm)return;const candidates=lm.bench.filter(id=>!lm.redOut.includes(id));
+  if(!candidates.length){alert("Geen beschikbare wisselspelers.");return}openLiveSubModal(outId,candidates);
+}
+function openLiveSubModal(outId,candidates){
+  document.getElementById("liveModalRoot").innerHTML=`<div class="live-modal"><div class="live-modal-box">
+  <div class="live-modal-head"><h2>🔄 Wissel maken</h2><button class="close" id="closeLiveModal">✕</button></div>
+  <p>Speler eruit: <b>${esc(player(outId)?.name||"")}</b></p><label>Speler erin<select id="liveSubIn">${candidates.map(id=>`<option value="${id}">${esc(player(id)?.name||"")}</option>`).join("")}</select></label>
+  <button class="btn" id="confirmLiveSub" data-out="${outId}" style="margin-top:12px">🔄 Wissel bevestigen</button></div></div>`;
+  bindLiveModal();
+}
+function confirmLiveSub(outId){
+  const lm=liveState.match,inId=document.getElementById("liveSubIn")?.value;if(!inId)return;
+  const minute=Math.floor(elapsedLiveMinutes());
+  lm.field=lm.field.filter(id=>id!==outId);lm.field.push(inId);lm.bench=lm.bench.filter(id=>id!==inId);if(!lm.bench.includes(outId))lm.bench.push(outId);
+  lm.minutes[inId]=lm.minutes[inId]||0;if(!lm.enteredIds.includes(inId))lm.enteredIds.push(inId);
+  lm.substitutions.push({outId,inId,minute});lm.events.push({id:uid("event"),type:"sub",outId,inId,minute});
+  closeLiveModal();renderLiveMatch();
+}
+function livePlayerRow(id,onField){
+  const p=player(id);
+  return `<div class="live-player"><b>${esc(p?.name||"Onbekend")}</b><div class="muted">${esc(p?.position||"")}</div>
+  ${onField?`<div class="actions">
+  <button class="btn sm" data-live-action="goalPlayer" data-id="${id}">⚽ Goal</button>
+  <button class="btn sm" data-live-action="sub" data-id="${id}">⇄ Wissel</button>
+  <button class="btn sm" data-live-action="assist" data-id="${id}">🅰️ Assist</button>
+  <button class="btn sm warn" data-live-action="yellow" data-id="${id}">🟨 Geel</button>
+  <button class="btn sm danger" data-live-action="red" data-id="${id}">🟥 Rood</button></div>`:""}</div>`;
+}
+function liveEventsHTML(events){
+  return events.slice().reverse().map(e=>{
+    let text="";
+    if(e.type==="goal")text=e.side==="own"?`⚽ Goal voor ons${e.playerId?" · "+esc(player(e.playerId)?.name||""):""}`:"⚽ Goal tegenstander";
+    if(e.type==="assist")text=`🅰️ Assist · ${esc(player(e.playerId)?.name||"")}`;
+    if(e.type==="yellow")text=`🟨 Gele kaart · ${esc(player(e.playerId)?.name||"")}`;
+    if(e.type==="red")text=`🟥 Rode kaart · ${esc(player(e.playerId)?.name||"")}`;
+    if(e.type==="sub")text=`🔄 ${esc(player(e.outId)?.name||"")} → ${esc(player(e.inId)?.name||"")}`;
+    return `<div class="live-event"><b>${e.minute}'</b> · ${text}</div>`;
+  }).join("")||'<div class="muted">Nog geen gebeurtenissen.</div>';
+}
+function renderLiveMatch(){
+  const lm=liveState.match;if(!lm)return;
+  const e=elapsedLiveMinutes(),mins=Math.floor(e),secs=Math.floor((e-mins)*60),clock=`${String(mins).padStart(2,"0")}:${String(secs).padStart(2,"0")}`,over=mins>lm.halfLength;
+  document.getElementById("view").innerHTML=`<div class="page-head"><div><span class="eyebrow">🔴 LIVE</span><h1>${esc(lm.opponent)}</h1><p>${lm.half===1?"1e helft":"2e helft"} · ${esc(lm.type)}</p></div><button class="secondary" id="cancelLive">Wedstrijd stoppen</button></div>
+  <div class="live-score"><div class="score-team"><div>U16 Selectie</div><div class="score">${lm.ownGoals}</div></div><div><div class="clock ${over?"overtime":""}">${clock}</div><div class="muted" style="text-align:center">${over?"BLESSURE-/OVERTIME":"speeltijd"}</div></div><div class="score-team"><div>${esc(lm.opponent)}</div><div class="score">${lm.opponentGoals}</div></div></div>
+  <div class="card"><div class="live-actions"><button class="primary" data-live-action="goalOwn">⚽ Goal voor ons</button><button class="secondary" data-live-action="goalOpp">⚽ Goal tegenstander</button><button class="secondary" data-live-action="pause">${lm.status==="running"?"⏸ Pauzeer klok":"▶ Hervat klok"}</button><button class="btn warn" data-live-action="half">${lm.half===1?"⏱ Einde 1e helft":"🏁 Einde wedstrijd"}</button></div></div>
+  <div class="grid-2" style="margin-top:14px"><div class="card"><div class="head"><h3>Op het veld</h3><span class="badge ok">${lm.field.length}</span></div>${lm.field.map(id=>livePlayerRow(id,true)).join("")}</div>
+  <div class="card"><div class="head"><h3>Bank</h3><span class="badge">${lm.bench.length}</span></div>${lm.bench.map(id=>livePlayerRow(id,false)).join("")}</div></div>
+  <div class="grid-2" style="margin-top:14px"><div class="card"><h3>Live gebeurtenissen</h3>${liveEventsHTML(lm.events)}</div>
+  <div class="card"><h3>Minuten tot nu toe</h3><div class="live-minute-list">${players().map(p=>`<div class="row" style="justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--line)"><span>${esc(p.name)}</span><b>${Math.floor(lm.minutes[p.id]||0)} min</b></div>`).join("")}</div></div></div>`;
+  bindLive();
+}
+function openLiveSummary(){
+  const lm=liveState.match;if(!lm)return;const ids=players().map(p=>p.id);
+  document.getElementById("liveModalRoot").innerHTML=`<div class="live-modal"><div class="live-modal-box">
+  <div class="live-modal-head"><div><span class="eyebrow">WEDSTRIJD CONTROLEREN</span><h2>🏁 ${esc(lm.opponent)}</h2></div><button class="close" id="closeLiveModal">✕</button></div>
+  <div class="live-score"><div class="score-team"><div>U16 Selectie</div><div class="score">${lm.ownGoals}</div></div><div class="score">-</div><div class="score-team"><div>${esc(lm.opponent)}</div><div class="score">${lm.opponentGoals}</div></div></div>
+  <div class="notice"><b>Controleer de minuten.</b> Ze zijn automatisch berekend op basis van wie op het veld stond. Je kunt ze hier corrigeren.</div>
+  <div class="table-wrap"><table><thead><tr><th>Speler</th><th>Status</th><th>Min</th><th>Goals</th><th>Assists</th><th>Geel</th><th>Rood</th><th>Rating</th><th>Notitie</th></tr></thead><tbody>
+  ${ids.map(id=>{const ev=lm.events.filter(e=>e.playerId===id),st=lm.starterIds.includes(id)?"basis":lm.enteredIds.includes(id)?"ingevallen":"niet ingekomen";
+    return `<tr><td><b>${esc(player(id)?.name||"")}</b></td><td><select class="input liveStatus" data-id="${id}"><option value="basis" ${st==="basis"?"selected":""}>Basis</option><option value="ingevallen" ${st==="ingevallen"?"selected":""}>Ingevallen</option><option value="niet ingekomen" ${st==="niet ingekomen"?"selected":""}>Niet ingekomen</option></select></td>
+    <td><input class="input liveMin" data-id="${id}" type="number" min="0" value="${Math.floor(lm.minutes[id]||0)}"></td><td><input class="input liveGoals" data-id="${id}" type="number" min="0" value="${ev.filter(e=>e.type==="goal"&&e.side==="own").length}"></td>
+    <td><input class="input liveAssists" data-id="${id}" type="number" min="0" value="${ev.filter(e=>e.type==="assist").length}"></td><td><input class="input liveYellow" data-id="${id}" type="number" min="0" value="${ev.filter(e=>e.type==="yellow").length}"></td>
+    <td><input class="input liveRed" data-id="${id}" type="number" min="0" value="${ev.filter(e=>e.type==="red").length}"></td><td><input class="input liveRating" data-id="${id}" type="number" min="1" max="10" step=".1"></td><td><input class="input liveNote" data-id="${id}" placeholder="Notitie"></td></tr>`}).join("")}</tbody></table></div>
+  <div class="grid-2" style="margin-top:14px"><label>⭐ MOTM<select id="liveMotm"><option value="">Geen keuze</option>${ids.map(id=>`<option value="${id}">${esc(player(id)?.name||"")}</option>`).join("")}</select></label>
+  <label>Teamrating<input id="liveTeamRating" type="number" min="1" max="10" step=".1"></label><label>Wat ging goed?<textarea id="liveGood"></textarea></label><label>Wat kan beter?<textarea id="liveImprove"></textarea></label><label>Algemene notitie<textarea id="liveNote"></textarea></label></div>
+  <div class="actions" style="justify-content:flex-end;margin-top:12px"><button class="secondary" id="cancelLiveSummary">Annuleren</button><button class="primary" id="saveLiveMatch">🏁 Definitief opslaan</button></div>
+  </div></div>`;
+  bindLiveModal();
+}
+function saveLiveMatch(){
+  const lm=liveState.match;if(!lm)return;
+  const ps=players().map(p=>{const id=p.id;return{playerId:id,status:lm.starterIds.includes(id)?"basis":lm.enteredIds.includes(id)?"ingevallen":"niet ingekomen",
+    minutes:+document.querySelector(`.liveMin[data-id="${id}"]`)?.value||0,goals:+document.querySelector(`.liveGoals[data-id="${id}"]`)?.value||0,
+    assists:+document.querySelector(`.liveAssists[data-id="${id}"]`)?.value||0,yellow:+document.querySelector(`.liveYellow[data-id="${id}"]`)?.value||0,
+    red:+document.querySelector(`.liveRed[data-id="${id}"]`)?.value||0,rating:+document.querySelector(`.liveRating[data-id="${id}"]`)?.value||null,note:document.querySelector(`.liveNote[data-id="${id}"]`)?.value||""};});
+  db.matches.push({id:uid("match"),teamId:lm.teamId,date:lm.date,opponent:lm.opponent,type:lm.type,ownGoals:lm.ownGoals,opponentGoals:lm.opponentGoals,result:resultLabel(lm.ownGoals,lm.opponentGoals),
+    teamRating:+document.getElementById("liveTeamRating")?.value||null,teamGood:document.getElementById("liveGood")?.value||"",teamImprove:document.getElementById("liveImprove")?.value||"",note:document.getElementById("liveNote")?.value||"",
+    motmPlayerId:document.getElementById("liveMotm")?.value||null,motm:document.getElementById("liveMotm")?.value||null,players:ps,liveTracking:true,liveEvents:clone(lm.events),substitutions:clone(lm.substitutions)});
+  persist();stopLiveTimer();liveState.match=null;closeLiveModal();alert("Live wedstrijd opgeslagen.");setSection("history");
+}
+function cancelLiveMatch(){if(liveState.match&&!confirm("Live wedstrijd stoppen? Niet-opgeslagen gegevens gaan verloren."))return;stopLiveTimer();liveState.match=null;closeLiveModal();setSection("match")}
+function bindLive(){
+  document.getElementById("beginLive")?.addEventListener("click",beginLiveMatch);
+  document.getElementById("cancelLive")?.addEventListener("click",cancelLiveMatch);
+  document.querySelectorAll("[data-live-action]").forEach(b=>b.addEventListener("click",()=>{const a=b.dataset.liveAction,id=b.dataset.id;
+    if(a==="goalOwn")liveGoal("own");if(a==="goalOpp")liveGoal("opp");if(a==="goalPlayer")livePlayerGoal(id);if(a==="assist")liveAssist(id);if(a==="yellow")liveCard(id,"yellow");if(a==="red")liveCard(id,"red");if(a==="sub")liveSub(id);if(a==="pause")pauseLiveMatch();if(a==="half")finishHalfLive();
+  }));
+}
+function bindLiveModal(){
+  document.getElementById("closeLiveModal")?.addEventListener("click",closeLiveModal);
+  document.getElementById("cancelLiveSummary")?.addEventListener("click",closeLiveModal);
+  document.getElementById("confirmLiveSub")?.addEventListener("click",e=>confirmLiveSub(e.currentTarget.dataset.out));
+  document.getElementById("saveLiveMatch")?.addEventListener("click",saveLiveMatch);
+}
+function closeLiveModal(){document.getElementById("liveModalRoot").innerHTML=""}
+
 function bindShell(){
   document.querySelectorAll("[data-nav]").forEach(b=>b.onclick=()=>setSection(b.dataset.nav));
   document.getElementById("teamSelect").onchange=e=>{db.activeTeamId=e.target.value;ui.trainingDraft=null;ui.matchDraft=null;persist();render();};
@@ -908,6 +1066,7 @@ function bindView(){
   document.getElementById("saveTraining")?.addEventListener("click",saveTraining);
   document.getElementById("cancelTraining")?.addEventListener("click",()=>{ui.trainingDraft=null;ui.editingTraining=null;localStorage.removeItem(DRAFT_T);setSection("dashboard");});
   document.getElementById("saveMatch")?.addEventListener("click",saveMatch);
+  document.getElementById("startLiveFromMatch")?.addEventListener("click",startLiveMatch);
   document.getElementById("cancelMatch")?.addEventListener("click",()=>{ui.matchDraft=null;ui.editingMatch=null;localStorage.removeItem(DRAFT_M);setSection("dashboard");});
   document.getElementById("backPlayers")?.addEventListener("click",()=>{ui.selectedPlayer=null;setSection("players");});
   document.getElementById("saveProfileNotes")?.addEventListener("click",()=>{const p=player(ui.selectedPlayer);p.notes=document.getElementById("profileNotes").value;persist();alert("Notitie opgeslagen.");});
@@ -1043,389 +1202,6 @@ style.textContent=`
 @media(max-width:900px){.sidebar{display:none}.mobile-head{height:55px;padding:12px 15px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;background:#09131d;z-index:5}.page-head{padding:22px 15px 15px;display:block}.head-actions{margin-top:14px}.kpi-grid{padding:0 15px 12px;grid-template-columns:repeat(2,1fr)}.grid-2{padding:0 15px 12px;grid-template-columns:1fr}.calendar-card{margin:0 15px 12px}.player-grid{grid-template-columns:1fr}.form-grid,.rating-grid{grid-template-columns:1fr}.mobile-nav{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;bottom:0;left:0;right:0;background:#09131d;border-top:1px solid var(--line);z-index:10;padding:5px}.mobile-nav button{background:transparent;border:0;color:var(--muted);padding:5px}.mobile-nav button.active{color:var(--accent)}.mobile-nav span,.mobile-nav small{display:block}.mobile-nav span{font-size:17px}.mobile-nav small{font-size:8px}.main{padding-bottom:68px}.calendar{gap:3px}.cal-cell{min-height:47px;padding:5px;font-size:11px}.stat-strip{grid-template-columns:repeat(5,1fr)}}
 `;
 document.head.appendChild(style);
-
-
-/* LIVE WEDSTRIJD — toevoeging; normale wedstrijd blijft intact */
-ui.liveMatch=null;
-function lp(){return players()}
-function lc(){let s=ui.liveMatch;if(!s)return 0;let x=+s.elapsed||0;if(s.running&&s.startedAt)x+=(Date.now()-s.startedAt)/1000;return Math.max(0,x)}
-function lm(){return Math.floor(lc()/60)}
-function lmins(id){let s=ui.liveMatch,a=s.periods[id]||[],n=lm();return a.reduce((z,p)=>z+Math.max(0,(p.out==null?n:p.out)-(+p.in||0)),0)}
-function lclose(id,m){let a=ui.liveMatch.periods[id]||[];let o=[...a].reverse().find(x=>x.out==null);if(o)o.out=m}
-function llog(icon,text){let s=ui.liveMatch;s.events.push({id:uid("event"),minute:lm(),icon,text})}
-
-function openLiveMatch(){
- let ps=lp();if(!ps.length){alert("Voeg eerst spelers toe aan het team.");return}
- ui.liveMatch={date:document.getElementById("mDate")?.value||today(),opponent:document.getElementById("mOpponent")?.value||"",type:document.getElementById("mType")?.value||"Competitie",duration:40,half:1,running:false,paused:false,finished:false,elapsed:0,startedAt:null,selectedStarters:[],field:[],periods:{},redOut:[],events:[],stats:{}};
- ps.forEach(p=>{ui.liveMatch.periods[p.id]=[];ui.liveMatch.stats[p.id]={goals:0,assists:0,yellow:0,red:0}});
- renderLiveSetup();
-}
-function renderLiveSetup(){
- let s=ui.liveMatch,root=document.getElementById("view");if(!root)return;
- root.innerHTML=`<div class="page-head"><div><span class="eyebrow">LIVE WEDSTRIJD</span><h1>Basisopstelling</h1><p>${esc(s.opponent||"Tegenstander")} · ${esc(s.date)}</p></div><div class="head-actions"><button class="ghost small" id="liveBack">← Terug</button></div></div>
- <div class="grid-2">${card("Basisopstelling",`<p class="muted">Selecteer wie start. De keuze wordt vastgezet bij de aftrap.</p><div class="live-counter"><b>${s.selectedStarters.length}</b> spelers geselecteerd</div><div class="live-starters">${lp().map(p=>{let on=s.selectedStarters.includes(p.id);return `<button class="live-starter ${on?"selected":""}" data-ls="${p.id}"><span>${on?"✓":"○"}</span><b>${esc(p.name)}</b><small>${esc(p.position||"")}</small></button>`}).join("")}</div>`)}
- ${card("Wedstrijdinstellingen",`<label>Helftduur<input id="liveDur" type="number" min="1" value="${s.duration}"></label><div class="notice good">Start 1e Helft kan alleen met een geselecteerde basisopstelling.</div>`)}</div>
- <div class="card"><button id="liveStart" class="primary live-start" ${s.selectedStarters.length?"":"disabled"}>▶ Start 1e Helft</button></div>`;
- document.getElementById("liveBack").onclick=()=>{ui.liveMatch=null;render()};
- document.getElementById("liveDur").oninput=e=>s.duration=Math.max(1,num(e.target.value,40));
- document.querySelectorAll("[data-ls]").forEach(b=>b.onclick=()=>{let i=s.selectedStarters.indexOf(b.dataset.ls);if(i>=0)s.selectedStarters.splice(i,1);else s.selectedStarters.push(b.dataset.ls);renderLiveSetup()});
- document.getElementById("liveStart").onclick=startLive;
-}
-function startLive(){
- let s=ui.liveMatch;if(!s||!s.selectedStarters.length){alert("Selecteer eerst de basisopstelling.");return}
- s.field=s.selectedStarters.slice();s.field.forEach(id=>s.periods[id]=[{in:0,out:null}]);s.running=true;s.paused=false;s.startedAt=Date.now();renderLive();liveTick()
-}
-function liveTick(){
- let s=ui.liveMatch;if(!s?.running)return;let e=document.getElementById("liveClock");if(e){let x=lc(),m=Math.floor(x/60),q=Math.floor(x%60);e.textContent=String(m).padStart(2,"0")+":"+String(q).padStart(2,"0");e.classList.toggle("overtime",m>=s.duration)}requestAnimationFrame(liveTick)
-}
-function livePause(){let s=ui.liveMatch;if(!s?.running)return;if(s.paused){s.startedAt=Date.now();s.paused=false}else{s.elapsed=lc();s.startedAt=null;s.paused=true}renderLive();if(!s.paused)liveTick()}
-function liveHalf(){let s=ui.liveMatch;if(!s?.running)return;s.elapsed=lc();s.startedAt=null;s.paused=true;if(s.half===1){s.half=2;s.elapsed=0;llog("⏸","Einde 1e helft")}else{s.running=false;s.finished=true;let m=lm();s.field.forEach(id=>lclose(id,m));llog("🏁","Einde wedstrijd")}renderLive()}
-function liveAction(id,type){let s=ui.liveMatch,p=player(id);if(!s?.running||s.finished||!p||s.redOut.includes(id))return;let st=s.stats[id];if(type==="goal"){st.goals++;llog("⚽","Goal "+p.name)}if(type==="assist"){st.assists++;llog("🅰️","Assist "+p.name)}if(type==="yellow"){st.yellow++;llog("🟨","Gele kaart "+p.name)}if(type==="red"){st.red=1;let m=lm();lclose(id,m);s.field=s.field.filter(x=>x!==id);s.redOut.push(id);llog("🟥","Rode kaart "+p.name)}renderLive()}
-function liveSwap(outId){
- let s=ui.liveMatch;if(!s?.running||s.finished)return;let bench=lp().filter(p=>!s.field.includes(p.id)&&!s.redOut.includes(p.id));if(!bench.length){alert("Geen speler op de bank.");return}
- let names=bench.map((p,i)=>`${i+1}. ${p.name}`).join("\n"),n=Number(prompt(`Wie komt erin?\n\n${names}`));if(!n||!bench[n-1])return;let inn=bench[n-1],m=lm();lclose(outId,m);s.field=s.field.filter(x=>x!==outId);s.field.push(inn.id);s.periods[inn.id].push({in:m,out:null});llog("⇄",`Wissel: ${player(outId)?.name} → ${inn.name}`);renderLive()
-}
-function liveRow(p){
- let s=ui.liveMatch,st=s.stats[p.id]||{};return `<div class="live-player-row"><div><b>${esc(p.name)}</b><small>${esc(p.position||"")} · ${lmins(p.id)} min</small></div><div class="live-buttons"><button data-la="goal" data-id="${p.id}">⚽</button><button data-la="assist" data-id="${p.id}">🅰️</button><button data-la="yellow" data-id="${p.id}">🟨</button><button data-la="red" data-id="${p.id}" class="red-action">🟥</button><button data-lswo="${p.id}">⇄ Wissel</button></div></div>`
-}
-function renderLive(){
- let s=ui.liveMatch,root=document.getElementById("view");if(!root)return;let ps=lp(),field=ps.filter(p=>s.field.includes(p.id)),bench=ps.filter(p=>!s.field.includes(p.id)&&!s.redOut.includes(p.id)),red=ps.filter(p=>s.redOut.includes(p.id));
- root.innerHTML=`<div class="page-head"><div><span class="eyebrow">LIVE · ${s.half===1?"1E":"2E"} HELFT</span><h1>${esc(s.opponent||"Wedstrijd")}</h1><p>${esc(s.date)}</p></div></div>
- <section class="card live-clock-card"><div id="liveClock" class="live-clock">${String(Math.floor(lc()/60)).padStart(2,"0")}:${String(Math.floor(lc()%60)).padStart(2,"0")}</div><div class="actions live-main-actions">${s.finished?`<button id="liveSummary" class="primary live-big">🏁 Laatste controle & opslaan</button>`:`<button id="livePause" class="secondary live-big">${s.paused?"▶ Hervat":"⏸ Pauzeer"}</button><button id="liveHalf" class="danger live-big">${s.half===2?"🏁 Einde wedstrijd":"⏹ Einde helft"}</button>`}</div></section>
- <div class="grid-2">${card("🟢 In het veld",field.length?field.map(liveRow).join(""):empty("Geen spelers in het veld."))}${card("🟡 Op de bank",bench.map(p=>`<div class="live-bench-row"><b>${esc(p.name)}</b><span>${esc(p.position||"")}</span></div>`).join("")||empty("Geen spelers op de bank."))}</div>
- ${red.length?card("🟥 Eruit met rood",red.map(p=>`<div class="live-red-row"><b>${esc(p.name)}</b><span>Rood · ${s.periods[p.id]?.at(-1)?.out||lm()}'</span></div>`).join("")):""}
- ${card("📋 Live log",s.events.slice().reverse().map(e=>`<div class="live-log">${e.icon} ${esc(e.text)} <span>${e.minute}'</span></div>`).join("")||empty("Nog geen acties."))}`;
- document.getElementById("livePause")?.addEventListener("click",livePause);document.getElementById("liveHalf")?.addEventListener("click",liveHalf);document.getElementById("liveSummary")?.addEventListener("click",openLiveSummary);
- root.querySelectorAll("[data-la]").forEach(b=>b.onclick=()=>liveAction(b.dataset.id,b.dataset.la));root.querySelectorAll("[data-lswo]").forEach(b=>b.onclick=()=>liveSwap(b.dataset.lswo));if(s.running&&!s.paused)liveTick()
-}
-function openLiveSummary(){
- let s=ui.liveMatch,ps=lp(),m=document.createElement("div");m.className="live-summary-backdrop";m.id="liveSummaryModal";m.innerHTML=`<div class="live-summary-box"><h1>🏁 Wedstrijd afgerond</h1><p class="muted">${esc(s.opponent||"Wedstrijd")} · laatste controle</p><h3>Automatisch geregistreerde statistieken</h3><div class="live-summary-table">${ps.map(p=>{let x=s.stats[p.id]||{};return `<div class="live-summary-row"><b>${esc(p.name)}</b><span>${lmins(p.id)} min</span><span>⚽ ${x.goals||0}</span><span>🅰️ ${x.assists||0}</span><span>🟨 ${x.yellow||0}</span><span>🟥 ${x.red||0}</span><label>Rating<select data-lr="${p.id}"><option value="">—</option>${Array.from({length:10},(_,i)=>`<option>${i+1}</option>`).join("")}</select></label><label>Notitie<input data-ln="${p.id}" placeholder="Notitie"></label></div>`}).join("")}</div><h3>Teambeoordeling</h3><div class="form-grid"><label>Teamrating<select id="liveTR"><option value="">—</option>${Array.from({length:10},(_,i)=>`<option>${i+1}</option>`).join("")}</select></label><label>Wat ging goed?<textarea id="liveGood"></textarea></label><label>Wat moet beter?<textarea id="liveImprove"></textarea></label><label>Algemene notitie<textarea id="liveNote"></textarea></label></div><div class="notice good">Minuten, goals, assists en kaarten zijn automatisch berekend. Controleer ratings en notities en sla daarna definitief op.</div><div class="actions" style="justify-content:flex-end"><button class="secondary" id="liveSumBack">Terug</button><button class="primary" id="liveSave">✓ Definitief opslaan</button></div></div>`;document.body.appendChild(m);m.querySelector("#liveSumBack").onclick=()=>m.remove();m.querySelector("#liveSave").onclick=saveLive
-}
-function saveLive(){
- let s=ui.liveMatch,rows=lp().map(p=>{let x=s.stats[p.id]||{};return {playerId:p.id,status:s.redOut.includes(p.id)?"red":s.selectedStarters.includes(p.id)?"starter":lmins(p.id)>0?"sub":"not_played",minutes:lmins(p.id),goals:x.goals||0,assists:x.assists||0,yellow:x.yellow||0,red:x.red||0,rating:document.querySelector(`[data-lr="${CSS.escape(p.id)}"]`)?.value||"",note:document.querySelector(`[data-ln="${CSS.escape(p.id)}"]`)?.value||""}});
- db.matches.push({id:uid("match"),teamId:db.activeTeamId,date:s.date,opponent:s.opponent,type:s.type,ownGoals:0,opponentGoals:0,teamRating:document.getElementById("liveTR")?.value||"",teamGood:document.getElementById("liveGood")?.value||"",teamImprove:document.getElementById("liveImprove")?.value||"",note:document.getElementById("liveNote")?.value||"",motmPlayerId:"",players:rows,liveEvents:s.events,duration:s.duration,liveTracking:true});persist();document.getElementById("liveSummaryModal")?.remove();ui.liveMatch=null;ui.matchDraft=null;localStorage.removeItem(DRAFT_M);ui.section="history";render()
-}
-document.addEventListener("click",e=>{if(e.target.closest?.("#startLiveMatch")){e.preventDefault();openLiveMatch()}},true);
-const liveStyle=document.createElement("style");liveStyle.textContent=`.live-starters{display:grid;grid-template-columns:repeat(2,1fr);gap:7px}.live-starter{padding:12px;border:1px solid var(--line);border-radius:9px;background:#0b1525;color:#fff;text-align:left}.live-starter.selected{border-color:var(--green);background:#123628}.live-starter span{font-size:20px;color:var(--green);margin-right:8px}.live-starter small{display:block;color:var(--muted);margin-left:29px}.live-start{width:100%;font-size:18px;padding:14px}.live-start:disabled{opacity:.4}.live-clock-card{text-align:center}.live-clock{font:900 62px monospace;margin:10px}.live-clock.overtime{color:#ff8a3d}.live-big{font-size:17px;padding:13px 20px}.live-main-actions{justify-content:center}.live-player-row{display:flex;justify-content:space-between;gap:10px;padding:11px 0;border-bottom:1px solid var(--line)}.live-player-row small{display:block;color:var(--muted);font-size:11px}.live-buttons{display:flex;gap:5px;flex-wrap:wrap}.live-buttons button{min-width:40px;height:38px;border:1px solid var(--line);border-radius:8px;background:#0c1727;color:#fff}.live-buttons button:last-child{padding:0 9px}.live-bench-row,.live-red-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--line)}.live-red-row{color:#ff9b9b}.live-log{padding:8px 0;border-bottom:1px solid var(--line)}.live-log span{float:right;color:var(--muted)}.live-summary-backdrop{position:fixed;inset:0;background:#000b;z-index:100;display:flex;align-items:center;justify-content:center;padding:15px}.live-summary-box{width:min(1100px,100%);max-height:94vh;overflow:auto;background:var(--p);border:1px solid var(--line);border-radius:17px;padding:20px}.live-summary-table{display:grid;gap:7px}.live-summary-row{display:grid;grid-template-columns:1.5fr .55fr .5fr .6fr .5fr .5fr .7fr 1.3fr;gap:6px;align-items:center;border:1px solid var(--line);border-radius:8px;padding:8px}.live-summary-row label{font-size:10px}.live-summary-row input,.live-summary-row select{padding:7px;margin-top:3px}@media(max-width:700px){.live-starters{grid-template-columns:1fr}.live-player-row{flex-direction:column}.live-buttons{width:100%}.live-buttons button{flex:1}.live-clock{font-size:50px}.live-summary-row{grid-template-columns:1.5fr repeat(5,.5fr)}.live-summary-row label{grid-column:span 2}}`;document.head.appendChild(liveStyle);
-
-
-
-<script id="live-v2-js">
-/* Live Wedstrijd V2:
-   - own/opponent goals + live score
-   - proper substitutions with named incoming/outgoing player
-   - MOTM in final summary
-   - minute control before final save, in normal match-screen style
-*/
-(function(){
-  function esc2(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));}
-  function p2(id){return (db.players||[]).find(x=>x.id===id);}
-  function mins2(id){
-    const lm=ui.liveMatch;
-    if(!lm) return 0;
-    if(lm.minutes && Number.isFinite(Number(lm.minutes[id]))) return Math.max(0,Math.round(Number(lm.minutes[id])));
-    return 0;
-  }
-  function clockMin2(){
-    const lm=ui.liveMatch;
-    if(!lm) return 0;
-    return Math.max(0, Math.floor((lm.elapsedMs||0)/60000));
-  }
-  function renderScore2(){
-    const lm=ui.liveMatch;
-    if(!lm) return '';
-    return `<div class="live-scoreboard">
-      <div class="live-score-team"><div class="name">${esc2(lm.teamName||'Wij')}</div><div class="live-score-num">${lm.ownGoals||0}</div></div>
-      <div class="live-score-sep">–</div>
-      <div class="live-score-team"><div class="name">${esc2(lm.opponent||'Tegenstander')}</div><div class="live-score-num">${lm.oppGoals||0}</div></div>
-    </div>`;
-  }
-  function eventRows2(){
-    const lm=ui.liveMatch;
-    return (lm.events||[]).slice().reverse().map((e,i)=>{
-      let label=e.type==='goal'?'⚽ Goal':e.type==='assist'?'🅰️ Assist':e.type==='yellow'?'🟨 Geel':e.type==='red'?'🟥 Rood':e.type==='sub'?'🔄 Wissel':'Event';
-      let detail=e.type==='sub'
-        ? `${esc2(p2(e.outId)?.name||e.outName)} → ${esc2(p2(e.inId)?.name||e.inName)}`
-        : esc2(p2(e.playerId)?.name||e.playerName||'');
-      if(e.type==='goal') detail += e.side==='own' ? ' · Wij' : ' · Tegenstander';
-      return `<tr><td>${Math.max(0,Number(e.minute)||0) }'</td><td>${label}</td><td>${detail}</td><td><button class="btn ghost small" data-live-del-event="${esc2(e.id)}">Verwijder</button></td></tr>`;
-    }).join('');
-  }
-  function playerMinuteRows2(){
-    const lm=ui.liveMatch;
-    const ids = [...(lm.starters||[]), ...(lm.subbedIn||[])];
-    const uniq=[...new Set(ids)];
-    return uniq.map(id=>{
-      const pl=p2(id);
-      if(!pl) return '';
-      return `<div class="live-check-row"><strong>${esc2(pl.name)}</strong><span>${mins2(id)} min</span></div>`;
-    }).join('');
-  }
-  function result2(a,b){
-    a=Number(a)||0;b=Number(b)||0;
-    return a>b?'W':a<b?'V':'G';
-  }
-
-  // Extend liveAction for goal scoring, preserving other live actions.
-  const oldLiveAction = window.liveAction;
-  window.liveAction = function(type,id){
-    const lm=ui.liveMatch;
-    if(!lm) return;
-    if(type==='goalOwn'){
-      lm.ownGoals=(lm.ownGoals||0)+1;
-      lm.events=lm.events||[];
-      lm.events.push({id:'e_'+Date.now()+Math.random(),type:'goal',side:'own',minute:clockMin2()});
-      renderLive();
-      return;
-    }
-    if(type==='goalOpp'){
-      lm.oppGoals=(lm.oppGoals||0)+1;
-      lm.events=lm.events||[];
-      lm.events.push({id:'e_'+Date.now()+Math.random(),type:'goal',side:'opp',minute:clockMin2()});
-      renderLive();
-      return;
-    }
-    if(oldLiveAction) return oldLiveAction.apply(this,arguments);
-  };
-
-  // A real substitution screen: choose the player leaving, then choose the bench player entering.
-  window.liveSwap2 = function(outId){
-    const lm=ui.liveMatch;
-    if(!lm) return;
-    const bench=(lm.bench||[]).filter(id=>!(lm.subbedOut||[]).includes(id));
-    if(!bench.length){ alert('Er staat geen speler meer op de bank die kan invallen.'); return; }
-    const choices=bench.map((id,i)=>`${i+1}. ${p2(id)?.name||id}`).join('\\n');
-    const ans=prompt(`Wie komt erin?\\n\\n${choices}`);
-    if(ans===null) return;
-    const n=parseInt(ans,10);
-    if(!Number.isInteger(n)||n<1||n>bench.length){alert('Kies een geldig nummer.');return;}
-    const inId=bench[n-1];
-    lm.subbedIn=lm.subbedIn||[];
-    lm.subbedOut=lm.subbedOut||[];
-    lm.subs=lm.subs||[];
-    lm.subbedOut.push(outId);
-    lm.subbedIn.push(inId);
-    lm.subs.push({outId,inId,minute:clockMin2()});
-    lm.events=lm.events||[];
-    lm.events.push({id:'e_'+Date.now()+Math.random(),type:'sub',outId,inId,minute:clockMin2()});
-    // Keep minutes coherent: current field player stops; incoming starts now.
-    lm.field=(lm.field||[]).filter(x=>x!==outId);
-    if(!lm.field.includes(inId)) lm.field.push(inId);
-    lm.bench=(lm.bench||[]).filter(x=>x!==inId);
-    if(!lm.bench.includes(outId)) lm.bench.push(outId);
-    renderLive();
-  };
-
-  // Render a more complete live view by wrapping the existing one and injecting score/events/check.
-  const oldRenderLive = window.renderLive;
-  window.renderLive = function(){
-    if(!ui.liveMatch){ return oldRenderLive ? oldRenderLive() : ''; }
-    oldRenderLive && oldRenderLive();
-    const root=document.getElementById('liveView') || document.getElementById('matchView') || document.querySelector('[data-live-root]');
-    if(!root) return;
-    const lm=ui.liveMatch;
-    // Inject only once per render into a dedicated V2 panel.
-    let panel=document.getElementById('liveV2Panel');
-    if(!panel){
-      panel=document.createElement('div'); panel.id='liveV2Panel';
-      root.appendChild(panel);
-    }
-    const playing=(lm.status==='playing');
-    const paused=(lm.status==='paused');
-    panel.innerHTML=`
-      ${renderScore2()}
-      <div class="card live-check-card">
-        <div class="section-title">⚽ Live acties</div>
-        <div class="live-goal-controls">
-          <button class="btn primary" data-live-v2-action="goalOwn">⚽ Goal voor ons</button>
-          <button class="btn" data-live-v2-action="goalOpp">⚽ Goal tegenstander</button>
-        </div>
-        <div class="muted">Stand wordt automatisch bijgewerkt op basis van de geregistreerde goals.</div>
-      </div>
-      <div class="card live-check-card">
-        <div class="section-title">🔄 Wissels</div>
-        <div class="muted">Klik bij een speler op de wisselknop en kies wie erin komt.</div>
-        <div style="margin-top:8px">
-          ${(lm.field||[]).map(id=>{
-            const pl=p2(id); if(!pl)return '';
-            return `<div class="live-check-row"><strong>${esc2(pl.name)}</strong><button class="btn ghost small" data-live-v2-sub="${esc2(id)}">⇄ Wissel</button></div>`;
-          }).join('')}
-        </div>
-      </div>
-      <div class="card live-check-card">
-        <div class="section-title">⏱️ Minuten controleren vóór einde</div>
-        <div class="muted">Dit zijn de automatisch berekende minuten uit de live registratie. Je kunt ze vóór definitief opslaan controleren.</div>
-        ${playerMinuteRows2()}
-      </div>
-      <div class="card live-check-card">
-        <div class="section-title">📋 Live gebeurtenissen</div>
-        <table class="live-events-table">
-          <thead><tr><th>Min</th><th>Actie</th><th>Speler</th><th></th></tr></thead>
-          <tbody>${eventRows2()||'<tr><td colspan="4" class="muted">Nog geen gebeurtenissen.</td></tr>'}</tbody>
-        </table>
-      </div>`;
-    // If a live score was not present in the original state, initialize safely.
-    if(lm.ownGoals==null) lm.ownGoals=0;
-    if(lm.oppGoals==null) lm.oppGoals=0;
-  };
-
-  // Final summary: normal match-screen-like player rows, plus MOTM.
-  const oldOpenLiveSummary=window.openLiveSummary;
-  window.openLiveSummary=function(){
-    const lm=ui.liveMatch;
-    if(!lm) return oldOpenLiveSummary&&oldOpenLiveSummary();
-    const ids=[...(lm.starters||[]),...(lm.subbedIn||[])];
-    const uniq=[...new Set(ids)];
-    const modal=document.getElementById('modal')||document.querySelector('.modal');
-    const host=modal||document.body;
-    const existing=host.querySelector('#liveSummaryV2');
-    if(existing) existing.remove();
-    const wrap=document.createElement('div');
-    wrap.id='liveSummaryV2';
-    wrap.className='modal-backdrop';
-    wrap.innerHTML=`<div class="modal-card" style="max-width:1000px;max-height:90vh;overflow:auto">
-      <div class="modal-head"><h2>Wedstrijd afronden</h2><button class="btn ghost" data-live-v2-close>✕</button></div>
-      <div class="live-scoreboard">
-        <div class="live-score-team"><div class="name">${esc2(lm.teamName||'Wij')}</div><div class="live-score-num">${lm.ownGoals||0}</div></div>
-        <div class="live-score-sep">–</div>
-        <div class="live-score-team"><div class="name">${esc2(lm.opponent||'Tegenstander')}</div><div class="live-score-num">${lm.oppGoals||0}</div></div>
-      </div>
-      <div class="card live-check-card">
-        <div class="section-title">⏱️ Minuten controleren en eventueel aanpassen</div>
-        <div class="muted">Net als bij het normale wedstrijdscherm: controleer per speler de minuten en persoonlijke statistieken vóór opslaan.</div>
-        <div style="display:grid;grid-template-columns:1.3fr .7fr .6fr .6fr .6fr .9fr;gap:8px;font-size:12px;opacity:.7;margin:12px 0 6px">
-          <div>Speler</div><div>Minuten</div><div>Goals</div><div>Assists</div><div>Geel</div><div>Rating</div>
-        </div>
-        ${uniq.map(id=>{
-          const pl=p2(id); if(!pl)return '';
-          const ev=(lm.events||[]).filter(e=>e.playerId===id);
-          const goals=ev.filter(e=>e.type==='goal'&&e.side==='own').length;
-          const assists=ev.filter(e=>e.type==='assist').length;
-          const yellow=ev.filter(e=>e.type==='yellow').length;
-          return `<div class="live-summary-player">
-            <div><strong>${esc2(pl.name)}</strong></div>
-            <input class="input" type="number" min="0" max="${Math.max(1,clockMin2())}" value="${mins2(id)}" data-live-v2-min="${esc2(id)}">
-            <input class="input" type="number" min="0" value="${goals}" data-live-v2-goal="${esc2(id)}">
-            <input class="input" type="number" min="0" value="${assists}" data-live-v2-assist="${esc2(id)}">
-            <input class="input" type="number" min="0" value="${yellow}" data-live-v2-yellow="${esc2(id)}">
-            <input class="input" type="number" min="1" max="10" step=".1" placeholder="1–10" data-live-v2-rating="${esc2(id)}">
-          </div>`;
-        }).join('')}
-      </div>
-      <div class="card live-check-card">
-        <div class="section-title">⭐ Man of the Match</div>
-        <select class="input" id="liveV2MOTM">
-          <option value="">Geen keuze</option>
-          ${uniq.map(id=>`<option value="${esc2(id)}">${esc2(p2(id)?.name||id)}</option>`).join('')}
-        </select>
-      </div>
-      <div class="card live-check-card">
-        <div class="section-title">Teambeoordeling</div>
-        <input class="input" id="liveV2TeamRating" type="number" min="1" max="10" step=".1" placeholder="1–10">
-        <textarea class="input" id="liveV2Good" placeholder="Wat ging goed?"></textarea>
-        <textarea class="input" id="liveV2Improve" placeholder="Wat kan beter?"></textarea>
-        <textarea class="input" id="liveV2Note" placeholder="Algemene notitie"></textarea>
-      </div>
-      <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:14px">
-        <button class="btn ghost" data-live-v2-close>Annuleren</button>
-        <button class="btn primary" data-live-v2-save>🏁 Wedstrijd definitief opslaan</button>
-      </div>
-    </div>`;
-    document.body.appendChild(wrap);
-  };
-
-  function saveLive2(){
-    const lm=ui.liveMatch;
-    const modal=document.getElementById('liveSummaryV2');
-    if(!lm||!modal)return;
-    const ids=[...(lm.starters||[]),...(lm.subbedIn||[])];
-    const uniq=[...new Set(ids)];
-    const players=uniq.map(id=>{
-      const min=Number(modal.querySelector(`[data-live-v2-min="${CSS.escape(id)}"]`)?.value)||0;
-      const goals=Number(modal.querySelector(`[data-live-v2-goal="${CSS.escape(id)}"]`)?.value)||0;
-      const assists=Number(modal.querySelector(`[data-live-v2-assist="${CSS.escape(id)}"]`)?.value)||0;
-      const yellow=Number(modal.querySelector(`[data-live-v2-yellow="${CSS.escape(id)}"]`)?.value)||0;
-      const rating=Number(modal.querySelector(`[data-live-v2-rating="${CSS.escape(id)}"]`)?.value)||null;
-      return {
-        playerId:id,
-        status:(lm.starters||[]).includes(id)?'basis':'ingevallen',
-        minutes:Math.max(0,Math.round(min)),
-        goals:Math.max(0,goals),
-        assists:Math.max(0,assists),
-        yellow:Math.max(0,yellow),
-        red:0,
-        rating,
-        note:''
-      };
-    });
-    const motm=modal.querySelector('#liveV2MOTM')?.value||'';
-    const match={
-      id:'m_'+Date.now(),
-      teamId:lm.teamId||db.activeTeamId,
-      date:lm.date,
-      opponent:lm.opponent,
-      type:lm.type||'Competitie',
-      ownGoals:Number(lm.ownGoals)||0,
-      opponentGoals:Number(lm.oppGoals)||0,
-      result:result2(lm.ownGoals,lm.oppGoals),
-      teamRating:Number(modal.querySelector('#liveV2TeamRating')?.value)||null,
-      good:modal.querySelector('#liveV2Good')?.value||'',
-      improve:modal.querySelector('#liveV2Improve')?.value||'',
-      note:modal.querySelector('#liveV2Note')?.value||'',
-      motm,
-      players,
-      liveTracking:true,
-      liveEvents:lm.events||[]
-    };
-    db.matches=db.matches||[];
-    db.matches.push(match);
-    persist();
-    modal.remove();
-    ui.liveMatch=null;
-    if(typeof saveDrafts==='function') saveDrafts();
-    render();
-    if(typeof go==='function') go('history');
-  }
-
-  document.addEventListener('click',function(e){
-    const a=e.target.closest('[data-live-v2-action]');
-    if(a){ e.preventDefault(); window.liveAction(a.dataset.liveV2Action); return; }
-    const s=e.target.closest('[data-live-v2-sub]');
-    if(s){ e.preventDefault(); window.liveSwap2(s.dataset.liveV2Sub); return; }
-    const c=e.target.closest('[data-live-v2-close]');
-    if(c){ e.preventDefault(); document.getElementById('liveSummaryV2')?.remove(); return; }
-    const sv=e.target.closest('[data-live-v2-save]');
-    if(sv){ e.preventDefault(); saveLive2(); return; }
-    const de=e.target.closest('[data-live-del-event]');
-    if(de && ui.liveMatch){
-      const id=de.dataset.liveDelEvent;
-      const ev=ui.liveMatch.events||[];
-      const target=ev.find(x=>String(x.id)===String(id));
-      if(target?.type==='goal'){
-        if(target.side==='own') ui.liveMatch.ownGoals=Math.max(0,(ui.liveMatch.ownGoals||0)-1);
-        if(target.side==='opp') ui.liveMatch.oppGoals=Math.max(0,(ui.liveMatch.oppGoals||0)-1);
-      }
-      ui.liveMatch.events=ev.filter(x=>String(x.id)!==String(id));
-      renderLive();
-    }
-  },true);
-
-  // Ensure fields exist when live match is opened.
-  const oldOpenLiveMatch=window.openLiveMatch;
-  if(oldOpenLiveMatch){
-    window.openLiveMatch=function(){
-      oldOpenLiveMatch.apply(this,arguments);
-      if(ui.liveMatch){
-        ui.liveMatch.ownGoals=Number(ui.liveMatch.ownGoals)||0;
-        ui.liveMatch.oppGoals=Number(ui.liveMatch.oppGoals)||0;
-        ui.liveMatch.subbedIn=ui.liveMatch.subbedIn||[];
-        ui.liveMatch.subbedOut=ui.liveMatch.subbedOut||[];
-        ui.liveMatch.events=ui.liveMatch.events||[];
-      }
-    };
-  }
-})();
-</script>
 
 /* Boot */
 loadDB();
